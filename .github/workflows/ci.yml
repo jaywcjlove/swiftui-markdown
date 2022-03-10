@@ -15,9 +15,27 @@ jobs:
 
       - run: mkdir website
 
+      - name: Converts Markdown to HTML
+        uses: jaywcjlove/markdown-to-html-cli@main
+        with:
+          output: website/action.html
+          github-corners: https://github.com/jaywcjlove/markdown
+          favicon: https://forums.developer.apple.com/forums/build-02092022-2/public/assets/favicon.ico
+
       - name: Generate Contributors Images
         uses: jaywcjlove/github-action-contributors@main
         with:
           filter-author: (renovate\[bot\]|renovate-bot|dependabot\[bot\])
           output: website/CONTRIBUTORS.svg
           avatarSize: 42
+
+      - name: get tag version
+        id: tag_version
+        uses: jaywcjlove/changelog-generator@v1.5.0
+
+      - name: Deploy
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          commit_message: ${{steps.tag_version.outputs.tag}} ${{ github.event.head_commit.message }}
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./website
