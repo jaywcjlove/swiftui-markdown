@@ -94,13 +94,10 @@ public class MarkdownWebView: CustomView {
         
     }
     func setTheme(_ theme: ColorScheme) {
-        print("~~~~~~", theme)
         if theme == .dark {
-            print("~~~~~~2", theme)
             callJavascript(javascriptString: "document.body.classList.add('theme-dark');")
             callJavascript(javascriptString: "document.body.classList.remove('theme-light');")
         } else {
-            print("~~~~~~3", theme)
             callJavascript(javascriptString: "document.body.classList.remove('theme-dark');")
             callJavascript(javascriptString: "document.body.classList.add('theme-light');")
         }

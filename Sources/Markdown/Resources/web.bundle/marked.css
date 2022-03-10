@@ -1,4 +1,5 @@
 #__markdown_preview__ {
+    user-select: none;
     -webkit-user-select: none;
     cursor: default;
     position: absolute;
