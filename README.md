@@ -2,9 +2,11 @@ Markdown
 ===
 
 [![CI](https://github.com/jaywcjlove/markdown/actions/workflows/ci.yml/badge.svg)](https://github.com/jaywcjlove/markdown/actions/workflows/ci.yml)
-![](https://shields.io/badge/SwiftUI-macOS%20%7C%20iOS-green?logo=Swift&style=flat)
+![SwiftUI Support](https://shields.io/badge/SwiftUI-macOS%20%7C%20iOS-green?logo=Swift&style=flat)
 
 Render Markdown text in SwiftUI. It is a preview based on the [`Marked`](https://github.com/markedjs/marked) implementation.
+
+![Markdown Package Screenshot](https://user-images.githubusercontent.com/1680273/157746319-d338670c-e4b2-471b-b524-0e9ecb8d2c52.png)
 
 ## Installation
 

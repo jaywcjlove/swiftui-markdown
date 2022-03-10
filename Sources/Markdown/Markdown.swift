@@ -14,11 +14,15 @@ public struct Markdown: ViewRepresentable {
     @Binding var content: String
     @Environment(\.colorScheme) var colorScheme
     var textDidChanged: ((String) -> Void)?
+    var theme: ColorScheme?
 
-    public init(
-        content: Binding<String>
-    ) {
+    public init(content: Binding<String>) {
         self._content = content
+        self.theme = colorScheme
+    }
+    public init(content: Binding<String>, theme: ColorScheme) {
+        self._content = content
+        self.theme = theme
     }
     
     public func makeCoordinator() -> Coordinator {
@@ -30,11 +34,13 @@ public struct Markdown: ViewRepresentable {
         codeView.textDidChanged = { text in
             context.coordinator.set(content: text)
         }
+        colorScheme == .dark ? codeView.setTheme(.dark) : codeView.setTheme(.light)
         return codeView
     }
     
     private func updateView(_ webview: MarkdownWebView, context: Context) {
         if context.coordinator.colorScheme != colorScheme {
+            colorScheme == .dark ? webview.setTheme(.dark) : webview.setTheme(.light)
             context.coordinator.set(colorScheme: colorScheme)
         }
         if context.coordinator.content != content {

@@ -4,7 +4,7 @@
 //
 //  Created by 王楚江 on 2022/3/10.
 //
-
+import SwiftUI
 import WebKit
 
 #if os(OSX)
@@ -92,6 +92,18 @@ public class MarkdownWebView: CustomView {
         let script = first + content + end
         callJavascript(javascriptString: script)
         
+    }
+    func setTheme(_ theme: ColorScheme) {
+        print("~~~~~~", theme)
+        if theme == .dark {
+            print("~~~~~~2", theme)
+            callJavascript(javascriptString: "document.body.classList.add('theme-dark');")
+            callJavascript(javascriptString: "document.body.classList.remove('theme-light');")
+        } else {
+            print("~~~~~~3", theme)
+            callJavascript(javascriptString: "document.body.classList.remove('theme-dark');")
+            callJavascript(javascriptString: "document.body.classList.add('theme-light');")
+        }
     }
     
 }

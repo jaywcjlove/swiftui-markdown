@@ -16,8 +16,8 @@ struct ContentView: View {
         """
     var body: some View {
         VStack {
-            Markdown(content: $mdStr)
-            TextEditor(text: $mdStr)
+            Markdown(content: $mdStr).padding(10)
+            TextEditor(text: $mdStr).frame(height: 100, alignment: .leading)
         }
     }
 }
