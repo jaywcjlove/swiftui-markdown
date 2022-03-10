@@ -49,6 +49,14 @@ public struct Markdown: ViewRepresentable {
     public func updateNSView(_ webview: MarkdownWebView, context: Context) {
         updateView(webview, context: context)
     }
+    // MARK: iOS
+    public func makeUIView(context: Context) -> MarkdownWebView {
+        getWebView(context: context)
+    }
+    
+    public func updateUIView(_ webview: MarkdownWebView, context: Context) {
+        updateView(webview, context: context)
+    }
 }
 
 public extension Markdown {

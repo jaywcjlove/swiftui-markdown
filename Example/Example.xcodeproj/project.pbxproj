@@ -15,6 +15,7 @@
 		7D6AF8C827D9DF2300EE5204 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7D6AF8B527D9DF2300EE5204 /* Assets.xcassets */; };
 		7D6AF8DD27D9EEA500EE5204 /* Markdown in Frameworks */ = {isa = PBXBuildFile; fileRef = 7D6AF8D727D9E43500EE5204 /* Markdown */; };
 		7D6AF8DF27D9EEFC00EE5204 /* Markdown in Frameworks */ = {isa = PBXBuildFile; productRef = 7D6AF8DE27D9EEFC00EE5204 /* Markdown */; };
+		7D6AF8E227DA73B100EE5204 /* Markdown in Frameworks */ = {isa = PBXBuildFile; productRef = 7D6AF8E127DA73B100EE5204 /* Markdown */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7D6AF8E227DA73B100EE5204 /* Markdown in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -116,6 +118,9 @@
 			dependencies = (
 			);
 			name = "Example (iOS)";
+			packageProductDependencies = (
+				7D6AF8E127DA73B100EE5204 /* Markdown */,
+			);
 			productName = "Example (iOS)";
 			productReference = 7D6AF8BA27D9DF2300EE5204 /* Example.app */;
 			productType = "com.apple.product-type.application";
@@ -484,6 +489,10 @@
 
 /* Begin XCSwiftPackageProductDependency section */
 		7D6AF8DE27D9EEFC00EE5204 /* Markdown */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = Markdown;
+		};
+		7D6AF8E127DA73B100EE5204 /* Markdown */ = {
 			isa = XCSwiftPackageProductDependency;
 			productName = Markdown;
 		};
