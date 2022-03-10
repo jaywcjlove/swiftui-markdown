@@ -18,7 +18,7 @@ jobs:
       - name: Converts Markdown to HTML
         uses: jaywcjlove/markdown-to-html-cli@main
         with:
-          output: website/action.html
+          output: website/index.html
           github-corners: https://github.com/jaywcjlove/markdown
           favicon: https://forums.developer.apple.com/forums/build-02092022-2/public/assets/favicon.ico
 
