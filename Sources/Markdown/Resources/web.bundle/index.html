@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Markdown Preview</title>
+  <style type="text/css" media="screen">
+      #__markdown_preview__ {
+          -webkit-user-select: none;
+          cursor: default;
+          position: absolute;
+          top: 0;
+          right: 0;
+          bottom: 0;
+          left: 0;
+      }
+      code {
+          background: #959595;
+      }
+  </style>
+</head>
+<body>
+    <div id="__markdown_preview__">
+    </div>
+    <script src="./marked.min.js" type="text/javascript" charset="utf-8"></script>
+    <script>
+        window.__markdown_preview_dom__ = document.getElementById('__markdown_preview__');
+        function markdownPreview(content) {
+            __markdown_preview_dom__.innerHTML = marked.parse(content);
+        }
+        
+        if (window.webkit) {
+            window.webkit.messageHandlers.mdPreviewDidReady.postMessage(null);
+            // __markdown_preview_dom__.innerHTML = JSON.stringify(typeof window.webkit.messageHandlers.mdPreviewDidReady)
+        }
+    </script>
+
+</body>
+</html>
