@@ -1,6 +1,7 @@
 Markdown
 ===
 
+[![CI](https://github.com/jaywcjlove/markdown/actions/workflows/ci.yml/badge.svg)](https://github.com/jaywcjlove/markdown/actions/workflows/ci.yml)
 ![](https://shields.io/badge/SwiftUI-macOS%20%7C%20iOS-green?logo=Swift&style=flat)
 
 Render Markdown text in SwiftUI. It is a preview based on the [`Marked`](https://github.com/markedjs/marked) implementation.
