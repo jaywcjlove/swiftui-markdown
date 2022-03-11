@@ -44,8 +44,11 @@ struct DemoList: View {
             DemoRow(title: "Code Block", systemImage: "slider.horizontal.below.rectangle", tag: "Code Block", selection: $selection) {
                 CodeGroup()
             }
-            DemoRow(title: "ToDo", systemImage: "text.badge.checkmark", tag: "ToDo", selection: $selection) {
+            DemoRow(title: "ToDo", systemImage: "checklist", tag: "ToDo", selection: $selection) {
                 ToDoGroup()
+            }
+            DemoRow(title: "List", systemImage: "list.bullet.rectangle.portrait.fill", tag: "List", selection: $selection) {
+                ListGroup()
             }
             DemoRow(
                 title: "markdownStyle",
