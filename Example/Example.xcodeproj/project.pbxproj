@@ -7,10 +7,20 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7D6033B627DAE4DD00F7B36B /* DemoList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D6033B527DAE4DD00F7B36B /* DemoList.swift */; };
+		7D6033B727DAE4DD00F7B36B /* DemoList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D6033B527DAE4DD00F7B36B /* DemoList.swift */; };
+		7D6033B927DAE5DC00F7B36B /* DemoRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D6033B827DAE5DC00F7B36B /* DemoRow.swift */; };
+		7D6033BA27DAE5DC00F7B36B /* DemoRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D6033B827DAE5DC00F7B36B /* DemoRow.swift */; };
+		7D6033C027DAEB7E00F7B36B /* CodeGroup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D6033BF27DAEB7E00F7B36B /* CodeGroup.swift */; };
+		7D6033C127DAEB7E00F7B36B /* CodeGroup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D6033BF27DAEB7E00F7B36B /* CodeGroup.swift */; };
+		7D6033C327DAF08000F7B36B /* HomeGroup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D6033C227DAF08000F7B36B /* HomeGroup.swift */; };
+		7D6033C427DAF08000F7B36B /* HomeGroup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D6033C227DAF08000F7B36B /* HomeGroup.swift */; };
+		7D6033C627DAF1D900F7B36B /* BaseMarkdownGroup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D6033C527DAF1D900F7B36B /* BaseMarkdownGroup.swift */; };
+		7D6033C727DAF1D900F7B36B /* BaseMarkdownGroup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D6033C527DAF1D900F7B36B /* BaseMarkdownGroup.swift */; };
+		7D6033C927DB2A4A00F7B36B /* ToDoGroup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D6033C827DB2A4A00F7B36B /* ToDoGroup.swift */; };
+		7D6033CA27DB2A4B00F7B36B /* ToDoGroup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D6033C827DB2A4A00F7B36B /* ToDoGroup.swift */; };
 		7D6AF8C327D9DF2300EE5204 /* ExampleApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D6AF8B327D9DF2200EE5204 /* ExampleApp.swift */; };
 		7D6AF8C427D9DF2300EE5204 /* ExampleApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D6AF8B327D9DF2200EE5204 /* ExampleApp.swift */; };
-		7D6AF8C527D9DF2300EE5204 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D6AF8B427D9DF2200EE5204 /* ContentView.swift */; };
-		7D6AF8C627D9DF2300EE5204 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D6AF8B427D9DF2200EE5204 /* ContentView.swift */; };
 		7D6AF8C727D9DF2300EE5204 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7D6AF8B527D9DF2300EE5204 /* Assets.xcassets */; };
 		7D6AF8C827D9DF2300EE5204 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7D6AF8B527D9DF2300EE5204 /* Assets.xcassets */; };
 		7D6AF8DD27D9EEA500EE5204 /* Markdown in Frameworks */ = {isa = PBXBuildFile; fileRef = 7D6AF8D727D9E43500EE5204 /* Markdown */; };
@@ -19,8 +29,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		7D6033B527DAE4DD00F7B36B /* DemoList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemoList.swift; sourceTree = "<group>"; };
+		7D6033B827DAE5DC00F7B36B /* DemoRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemoRow.swift; sourceTree = "<group>"; };
+		7D6033BF27DAEB7E00F7B36B /* CodeGroup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodeGroup.swift; sourceTree = "<group>"; };
+		7D6033C227DAF08000F7B36B /* HomeGroup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeGroup.swift; sourceTree = "<group>"; };
+		7D6033C527DAF1D900F7B36B /* BaseMarkdownGroup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseMarkdownGroup.swift; sourceTree = "<group>"; };
+		7D6033C827DB2A4A00F7B36B /* ToDoGroup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoGroup.swift; sourceTree = "<group>"; };
 		7D6AF8B327D9DF2200EE5204 /* ExampleApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExampleApp.swift; sourceTree = "<group>"; };
-		7D6AF8B427D9DF2200EE5204 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		7D6AF8B527D9DF2300EE5204 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7D6AF8BA27D9DF2300EE5204 /* Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7D6AF8C027D9DF2300EE5204 /* Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -49,6 +64,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7D6033BE27DAEB6B00F7B36B /* Group */ = {
+			isa = PBXGroup;
+			children = (
+				7D6033BF27DAEB7E00F7B36B /* CodeGroup.swift */,
+				7D6033C227DAF08000F7B36B /* HomeGroup.swift */,
+				7D6033C527DAF1D900F7B36B /* BaseMarkdownGroup.swift */,
+				7D6033C827DB2A4A00F7B36B /* ToDoGroup.swift */,
+			);
+			path = Group;
+			sourceTree = "<group>";
+		};
 		7D6AF8AD27D9DF2200EE5204 = {
 			isa = PBXGroup;
 			children = (
@@ -63,9 +89,11 @@
 		7D6AF8B227D9DF2200EE5204 /* Shared */ = {
 			isa = PBXGroup;
 			children = (
+				7D6033BE27DAEB6B00F7B36B /* Group */,
 				7D6AF8B327D9DF2200EE5204 /* ExampleApp.swift */,
-				7D6AF8B427D9DF2200EE5204 /* ContentView.swift */,
 				7D6AF8B527D9DF2300EE5204 /* Assets.xcassets */,
+				7D6033B527DAE4DD00F7B36B /* DemoList.swift */,
+				7D6033B827DAE5DC00F7B36B /* DemoRow.swift */,
 			);
 			path = Shared;
 			sourceTree = "<group>";
@@ -206,7 +234,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7D6AF8C527D9DF2300EE5204 /* ContentView.swift in Sources */,
+				7D6033C927DB2A4A00F7B36B /* ToDoGroup.swift in Sources */,
+				7D6033C627DAF1D900F7B36B /* BaseMarkdownGroup.swift in Sources */,
+				7D6033C027DAEB7E00F7B36B /* CodeGroup.swift in Sources */,
+				7D6033C327DAF08000F7B36B /* HomeGroup.swift in Sources */,
+				7D6033B927DAE5DC00F7B36B /* DemoRow.swift in Sources */,
+				7D6033B627DAE4DD00F7B36B /* DemoList.swift in Sources */,
 				7D6AF8C327D9DF2300EE5204 /* ExampleApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -215,7 +248,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7D6AF8C627D9DF2300EE5204 /* ContentView.swift in Sources */,
+				7D6033CA27DB2A4B00F7B36B /* ToDoGroup.swift in Sources */,
+				7D6033C727DAF1D900F7B36B /* BaseMarkdownGroup.swift in Sources */,
+				7D6033C127DAEB7E00F7B36B /* CodeGroup.swift in Sources */,
+				7D6033C427DAF08000F7B36B /* HomeGroup.swift in Sources */,
+				7D6033BA27DAE5DC00F7B36B /* DemoRow.swift in Sources */,
+				7D6033B727DAE4DD00F7B36B /* DemoList.swift in Sources */,
 				7D6AF8C427D9DF2300EE5204 /* ExampleApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
