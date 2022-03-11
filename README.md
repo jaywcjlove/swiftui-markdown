@@ -6,7 +6,7 @@ Markdown
 
 Render Markdown text in SwiftUI. It is a preview based on the [`Marked`](https://github.com/markedjs/marked) implementation.
 
-![Markdown Package Screenshot](https://user-images.githubusercontent.com/1680273/157866748-911e038b-c845-4da9-9ae2-1499a1cb0b93.png)
+![Markdown Package Screenshot](https://user-images.githubusercontent.com/1680273/157921398-b1557bab-6de2-4d09-b50d-1d865d252c3c.png)
 
 ## Installation
 

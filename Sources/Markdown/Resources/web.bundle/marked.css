@@ -14,8 +14,9 @@ body, html {
     min-height: 100%;
 }
 
-.markdown-body code {
+.markdown-body pre code {
     -webkit-user-select: text;
+    user-select: text;
     cursor: text;
 }
 
@@ -445,125 +446,34 @@ body, html {
   appearance: none;
 }
 
-.markdown-body .pl-c {
+.token.comment, .token.prolog, .token.doctype, .token.cdata {
   color: var(--color-prettylights-syntax-comment);
 }
-
-.markdown-body .pl-c1,
-.markdown-body .pl-s .pl-v {
-  color: var(--color-prettylights-syntax-constant);
-}
-
-.markdown-body .pl-e,
-.markdown-body .pl-en {
-  color: var(--color-prettylights-syntax-entity);
-}
-
-.markdown-body .pl-smi,
-.markdown-body .pl-s .pl-s1 {
-  color: var(--color-prettylights-syntax-storage-modifier-import);
-}
-
-.markdown-body .pl-ent {
+.token.namespace { opacity: 0.7; }
+.token.property, .token.tag, .token.selector, .token.constant, .token.symbol, .token.deleted {
   color: var(--color-prettylights-syntax-entity-tag);
 }
-
-.markdown-body .pl-k {
-  color: var(--color-prettylights-syntax-keyword);
-}
-
-.markdown-body .pl-s,
-.markdown-body .pl-pds,
-.markdown-body .pl-s .pl-pse .pl-s1,
-.markdown-body .pl-sr,
-.markdown-body .pl-sr .pl-cce,
-.markdown-body .pl-sr .pl-sre,
-.markdown-body .pl-sr .pl-sra {
-  color: var(--color-prettylights-syntax-string);
-}
-
-.markdown-body .pl-v,
-.markdown-body .pl-smw {
+.token.maybe-class-name {
   color: var(--color-prettylights-syntax-variable);
 }
-
-.markdown-body .pl-bu {
-  color: var(--color-prettylights-syntax-brackethighlighter-unmatched);
+.token.property-access, .token.operator, .token.boolean, .token.number, .token.selector .token.class, .token.attr-name, .token.string, .token.char, .token.builtin, .token.inserted {
+  color: var(--color-prettylights-syntax-constant);
 }
-
-.markdown-body .pl-ii {
-  color: var(--color-prettylights-syntax-invalid-illegal-text);
-  background-color: var(--color-prettylights-syntax-invalid-illegal-bg);
+.token.variable {
+  color: var(--color-prettylights-syntax-constant);
 }
-
-.markdown-body .pl-c2 {
-  color: var(--color-prettylights-syntax-carriage-return-text);
-  background-color: var(--color-prettylights-syntax-carriage-return-bg);
+.token.entity, .token.url, .language-css .token.string, .style .token.string {
+  color: var(--color-prettylights-syntax-string);
 }
-
-.markdown-body .pl-sr .pl-cce {
-  font-weight: bold;
-  color: var(--color-prettylights-syntax-string-regexp);
+.token.color, .token.atrule, .token.attr-value, .token.function, .token.class-name {
+  color: var(--color-prettylights-syntax-string);
 }
-
-.markdown-body .pl-ml {
-  color: var(--color-prettylights-syntax-markup-list);
+.token.rule, .token.regex, .token.important, .token.keyword {
+  color: var(--color-prettylights-syntax-keyword);
 }
-
-.markdown-body .pl-mh,
-.markdown-body .pl-mh .pl-en,
-.markdown-body .pl-ms {
-  font-weight: bold;
-  color: var(--color-prettylights-syntax-markup-heading);
-}
-
-.markdown-body .pl-mi {
-  font-style: italic;
-  color: var(--color-prettylights-syntax-markup-italic);
-}
-
-.markdown-body .pl-mb {
-  font-weight: bold;
-  color: var(--color-prettylights-syntax-markup-bold);
-}
-
-.markdown-body .pl-md {
-  color: var(--color-prettylights-syntax-markup-deleted-text);
-  background-color: var(--color-prettylights-syntax-markup-deleted-bg);
-}
-
-.markdown-body .pl-mi1 {
-  color: var(--color-prettylights-syntax-markup-inserted-text);
-  background-color: var(--color-prettylights-syntax-markup-inserted-bg);
-}
-
-.markdown-body .pl-mc {
-  color: var(--color-prettylights-syntax-markup-changed-text);
-  background-color: var(--color-prettylights-syntax-markup-changed-bg);
-}
-
-.markdown-body .pl-mi2 {
-  color: var(--color-prettylights-syntax-markup-ignored-text);
-  background-color: var(--color-prettylights-syntax-markup-ignored-bg);
-}
-
-.markdown-body .pl-mdr {
-  font-weight: bold;
-  color: var(--color-prettylights-syntax-meta-diff-range);
-}
-
-.markdown-body .pl-ba {
-  color: var(--color-prettylights-syntax-brackethighlighter-angle);
-}
-
-.markdown-body .pl-sg {
-  color: var(--color-prettylights-syntax-sublimelinter-gutter-mark);
-}
-
-.markdown-body .pl-corl {
-  text-decoration: underline;
-  color: var(--color-prettylights-syntax-constant-other-reference-link);
-}
+.token.important, .token.bold { font-weight: bold; }
+.token.italic { font-style: italic; }
+.token.entity { cursor: help; }
 
 .markdown-body [data-catalyst] {
   display: block;

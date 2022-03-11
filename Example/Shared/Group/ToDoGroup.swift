@@ -9,7 +9,7 @@ import SwiftUI
 
 struct ToDoGroup: View {
     @State private var mdStr: String = """
-        ToDo Group
+        To Do
         ===
                 
         - [ ] title 1

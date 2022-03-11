@@ -9,7 +9,7 @@ import SwiftUI
 
 struct BaseMarkdownGroup: View {
     @State private var mdStr: String = """
-        Markdown
+        Base Markdown
         ===
 
         [![CI](https://github.com/jaywcjlove/markdown/actions/workflows/ci.yml/badge.svg)](https://github.com/jaywcjlove/markdown/actions/workflows/ci.yml)
@@ -59,6 +59,10 @@ struct BaseMarkdownGroup: View {
         ## License
 
         Licensed under the MIT License.
+        
+        Here is a simple footnote[^1]. With some additional text after it.
+
+        [^1]: My reference.
         
         """
     var body: some View {
