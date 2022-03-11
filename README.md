@@ -6,7 +6,7 @@ Markdown
 
 Render Markdown text in SwiftUI. It is a preview based on the [`Marked`](https://github.com/markedjs/marked) implementation.
 
-![Markdown Package Screenshot](https://user-images.githubusercontent.com/1680273/157746319-d338670c-e4b2-471b-b524-0e9ecb8d2c52.png)
+![Markdown Package Screenshot](https://user-images.githubusercontent.com/1680273/157866748-911e038b-c845-4da9-9ae2-1499a1cb0b93.png)
 
 ## Installation
 
@@ -43,6 +43,24 @@ struct ContentView: View {
     }
   }
 }
+```
+
+### `.markdownStyle()`
+
+Setting markdown related styles.
+
+```swift
+Markdown(content: $mdStr)
+  .markdownStyle(
+      MarkdownStyle(
+        padding: 0, paddingTop: 115, paddingBottom: 2, paddingLeft: 130, paddingRight: 5
+      )
+  )
+```
+
+```swift
+Markdown(content: $mdStr)
+  .markdownStyle(MarkdownStyle(padding: 35 ))
 ```
 
 ## License

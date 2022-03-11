@@ -13,6 +13,7 @@ public struct Markdown: ViewRepresentable {
     
     @Binding var content: String
     @Environment(\.colorScheme) var colorScheme
+    @Environment(\.markdownStyle) private var style: MarkdownStyle
     var textDidChanged: ((String) -> Void)?
     var theme: ColorScheme?
 
@@ -20,7 +21,7 @@ public struct Markdown: ViewRepresentable {
         self._content = content
         self.theme = colorScheme
     }
-    public init(content: Binding<String>, theme: ColorScheme) {
+    public init(content: Binding<String>, theme: ColorScheme?) {
         self._content = content
         self.theme = theme
     }
@@ -31,6 +32,21 @@ public struct Markdown: ViewRepresentable {
     private func getWebView(context: Context) -> MarkdownWebView {
         let codeView = MarkdownWebView()
         codeView.setContent(content)
+        if (style.padding != nil) {
+            codeView.setPadding(style.padding!)
+        }
+        if (style.paddingTop != nil) {
+            codeView.setPaddingTop(style.paddingTop!)
+        }
+        if (style.paddingBottom != nil) {
+            codeView.setPaddingBottom(style.paddingBottom!)
+        }
+        if (style.paddingLeft != nil) {
+            codeView.setPaddingLeft(style.paddingLeft!)
+        }
+        if (style.paddingRight != nil) {
+            codeView.setPaddingRight(style.paddingRight!)
+        }
         codeView.textDidChanged = { text in
             context.coordinator.set(content: text)
         }
@@ -63,6 +79,13 @@ public struct Markdown: ViewRepresentable {
     public func updateUIView(_ webview: MarkdownWebView, context: Context) {
         updateView(webview, context: context)
     }
+    
+}
+
+extension View {
+    public func markdownStyle(_ markdownStyle: MarkdownStyle) -> some View {
+      return environment(\.markdownStyle, markdownStyle)
+    }
 }
 
 public extension Markdown {
@@ -87,6 +110,19 @@ public extension Markdown {
             }
         }
     }
+}
+
+extension EnvironmentValues {
+  fileprivate var markdownStyle: MarkdownStyle {
+    get { self[MarkdownStyleKey.self] }
+    set {
+        self[MarkdownStyleKey.self] = newValue
+    }
+  }
+}
+
+private struct MarkdownStyleKey: EnvironmentKey {
+  static let defaultValue = MarkdownStyle()
 }
 
 #if DEBUG

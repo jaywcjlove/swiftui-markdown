@@ -102,7 +102,21 @@ public class MarkdownWebView: CustomView {
             callJavascript(javascriptString: "document.body.classList.add('theme-light');")
         }
     }
-    
+    func setPadding(_ padding: Int) {
+        callJavascript(javascriptString: "__markdown_preview__.style.padding = '\(padding)px';")
+    }
+    func setPaddingTop(_ top: Int) {
+        callJavascript(javascriptString: "__markdown_preview__.style.paddingTop = '\(top)px';")
+    }
+    func setPaddingBottom(_ bottom: Int) {
+        callJavascript(javascriptString: "__markdown_preview__.style.paddingBottom = '\(bottom)px';")
+    }
+    func setPaddingLeft(_ left: Int) {
+        callJavascript(javascriptString: "__markdown_preview__.style.paddingLeft = '\(left)px';")
+    }
+    func setPaddingRight(_ right: Int) {
+        callJavascript(javascriptString: "__markdown_preview__.style.paddingRight = '\(right)px';")
+    }
 }
 
 

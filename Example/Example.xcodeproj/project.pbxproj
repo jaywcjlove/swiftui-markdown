@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7D025D0127DB47620057979B /* MarkdownStyleGroup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D025D0027DB47620057979B /* MarkdownStyleGroup.swift */; };
+		7D025D0227DB47620057979B /* MarkdownStyleGroup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D025D0027DB47620057979B /* MarkdownStyleGroup.swift */; };
 		7D6033B627DAE4DD00F7B36B /* DemoList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D6033B527DAE4DD00F7B36B /* DemoList.swift */; };
 		7D6033B727DAE4DD00F7B36B /* DemoList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D6033B527DAE4DD00F7B36B /* DemoList.swift */; };
 		7D6033B927DAE5DC00F7B36B /* DemoRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D6033B827DAE5DC00F7B36B /* DemoRow.swift */; };
@@ -29,6 +31,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		7D025D0027DB47620057979B /* MarkdownStyleGroup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarkdownStyleGroup.swift; sourceTree = "<group>"; };
 		7D6033B527DAE4DD00F7B36B /* DemoList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemoList.swift; sourceTree = "<group>"; };
 		7D6033B827DAE5DC00F7B36B /* DemoRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemoRow.swift; sourceTree = "<group>"; };
 		7D6033BF27DAEB7E00F7B36B /* CodeGroup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodeGroup.swift; sourceTree = "<group>"; };
@@ -71,6 +74,7 @@
 				7D6033C227DAF08000F7B36B /* HomeGroup.swift */,
 				7D6033C527DAF1D900F7B36B /* BaseMarkdownGroup.swift */,
 				7D6033C827DB2A4A00F7B36B /* ToDoGroup.swift */,
+				7D025D0027DB47620057979B /* MarkdownStyleGroup.swift */,
 			);
 			path = Group;
 			sourceTree = "<group>";
@@ -235,6 +239,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7D6033C927DB2A4A00F7B36B /* ToDoGroup.swift in Sources */,
+				7D025D0127DB47620057979B /* MarkdownStyleGroup.swift in Sources */,
 				7D6033C627DAF1D900F7B36B /* BaseMarkdownGroup.swift in Sources */,
 				7D6033C027DAEB7E00F7B36B /* CodeGroup.swift in Sources */,
 				7D6033C327DAF08000F7B36B /* HomeGroup.swift in Sources */,
@@ -249,6 +254,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7D6033CA27DB2A4B00F7B36B /* ToDoGroup.swift in Sources */,
+				7D025D0227DB47620057979B /* MarkdownStyleGroup.swift in Sources */,
 				7D6033C727DAF1D900F7B36B /* BaseMarkdownGroup.swift in Sources */,
 				7D6033C127DAEB7E00F7B36B /* CodeGroup.swift in Sources */,
 				7D6033C427DAF08000F7B36B /* HomeGroup.swift in Sources */,

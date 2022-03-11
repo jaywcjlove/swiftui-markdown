@@ -41,11 +41,19 @@ struct DemoList: View {
             DemoRow(title: "Base Markdown", systemImage: "doc.text.image", tag: "Base Markdown", selection: $selection) {
                 BaseMarkdownGroup()
             }
-            DemoRow(title: "Code Block", systemImage: "chevron.left.forwardslash.chevron.right", tag: "Code Block", selection: $selection) {
+            DemoRow(title: "Code Block", systemImage: "slider.horizontal.below.rectangle", tag: "Code Block", selection: $selection) {
                 CodeGroup()
             }
-            DemoRow(title: "ToDo", systemImage: "chevron.left.forwardslash.chevron.right", tag: "ToDo", selection: $selection) {
+            DemoRow(title: "ToDo", systemImage: "text.badge.checkmark", tag: "ToDo", selection: $selection) {
                 ToDoGroup()
+            }
+            DemoRow(
+                title: "markdownStyle",
+                systemImage: "chevron.left.forwardslash.chevron.right",
+                tag: "markdownStyle",
+                selection: $selection
+            ) {
+                MarkdownStyleGroup()
             }
         }
     }
