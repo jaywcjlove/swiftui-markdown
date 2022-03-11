@@ -29,7 +29,8 @@ private struct JavascriptFunction {
     }
 }
 
-public class MarkdownWebView: CustomView {
+public class MarkdownWebView: CustomView, WKNavigationDelegate {
+    @Environment(\.openURL) private var openURL
     private struct Constants {
         static let mdPreviewDidReady = "mdPreviewDidReady"
         static let mdPreviewDidChanged = "mdPreviewDidChanged"
@@ -43,6 +44,7 @@ public class MarkdownWebView: CustomView {
         configuration.preferences = preferences
         configuration.userContentController = userController
         let webView = WKWebView(frame: bounds, configuration: configuration)
+        webView.navigationDelegate = self
         
         #if os(OSX)
         webView.setValue(true, forKey: "drawsTransparentBackground") // Prevent white flick
@@ -117,8 +119,18 @@ public class MarkdownWebView: CustomView {
     func setPaddingRight(_ right: Int) {
         callJavascript(javascriptString: "__markdown_preview__.style.paddingRight = '\(right)px';")
     }
-}
 
+    public func webView(_ webView: WKWebView, decidePolicyFor navigationAction: WKNavigationAction, decisionHandler: @escaping (WKNavigationActionPolicy) -> Void) {
+        if let url = navigationAction.request.url {
+            if url.isFileURL == false {
+                openURL(url)
+                decisionHandler(.cancel)
+                return
+            }
+        }
+        decisionHandler(.allow)
+    }
+}
 
 
 extension MarkdownWebView {
