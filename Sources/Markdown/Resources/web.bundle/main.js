@@ -1,7 +1,7 @@
 // marked.setOptions({
 //     highlight: (code, lang) => {
-//         const language = Prism.languages[lang];
-//         if (language) {
+//         if (lang && Prism.languages[lang]) {
+//             const language = Prism.languages[lang];
 //             return Prism.highlight(code, language, lang);
 //         }
 //         return code;

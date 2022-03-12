@@ -504,6 +504,9 @@ body, html {
 .token.rule, .token.regex, .token.important, .token.keyword {
   color: var(--color-prettylights-syntax-keyword);
 }
+.token.coord {
+  color: var(--color-prettylights-syntax-meta-diff-range);
+}
 .token.important, .token.bold { font-weight: bold; }
 .token.italic { font-style: italic; }
 .token.entity { cursor: help; }
