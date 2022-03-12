@@ -32,7 +32,7 @@ struct ListGroup: View {
         ---
         
         - [x] #739
-        - [ ] https://github.com/octo-org/octo-repo/issues/740
+        - [ ] https://github.com/jaywcjlove/markdown
         - [ ] Add delight to the experience when all tasks are complete :tada:
         
         <!-- This content will not appear in the rendered Markdown -->

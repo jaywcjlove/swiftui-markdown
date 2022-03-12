@@ -59,13 +59,15 @@ struct DemoList: View {
             DemoRow(title: "List", systemImage: "list.bullet.rectangle.portrait.fill", tag: "List", selection: $selection) {
                 ListGroup()
             }
-            DemoRow(
-                title: "markdownStyle",
-                systemImage: "chevron.left.forwardslash.chevron.right",
-                tag: "markdownStyle",
-                selection: $selection
-            ) {
-                MarkdownStyleGroup()
+            Section(header: Text("API")) {
+                DemoRow(
+                    title: "markdownStyle",
+                    systemImage: "chevron.left.forwardslash.chevron.right",
+                    tag: "markdownStyle",
+                    selection: $selection
+                ) {
+                    MarkdownStyleGroup()
+                }
             }
         }
     }
