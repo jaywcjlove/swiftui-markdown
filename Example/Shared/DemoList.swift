@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct DemoList: View {
+    @Environment(\.openURL) var openURL
     @State private var selection: String? = "Home"
     var body: some View {
         NavigationView {
@@ -22,6 +23,14 @@ struct DemoList: View {
             Text("\(selection ?? "Company Inc")")
             Spacer()
             #if os(macOS)
+            Button(action: {
+                openURL(URL(string: "https://jaywcjlove.github.io/markdown")!)
+            }, label: {
+                Image(systemName: "network")
+                    .resizable() // 它将调整大小，以便填充所有可用空间
+                    .aspectRatio(contentMode: .fit)
+                    .font(.system(size: 18))
+            })
             Button(action: {
                 NSApp.keyWindow?.firstResponder?.tryToPerform(#selector(NSSplitViewController.toggleSidebar(_:)), with: nil)
             }, label: {
