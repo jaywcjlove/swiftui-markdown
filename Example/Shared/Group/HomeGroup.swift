@@ -17,7 +17,7 @@ struct HomeGroup: View {
 
         Render Markdown text in SwiftUI. It is a preview based on the [`Marked`](https://github.com/markedjs/marked) implementation.
 
-        ![Markdown Package Screenshot](https://user-images.githubusercontent.com/1680273/157921398-b1557bab-6de2-4d09-b50d-1d865d252c3c.png)
+        ![Markdown Package Screenshot](https://user-images.githubusercontent.com/1680273/158006529-939e1f88-6ffb-4812-9f55-f972cc579f80.png)
 
         ## Installation
 
