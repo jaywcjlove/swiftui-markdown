@@ -119,7 +119,7 @@ public class MarkdownWebView: CustomView, WKNavigationDelegate {
     func setPaddingRight(_ right: Int) {
         callJavascript(javascriptString: "__markdown_preview__.style.paddingRight = '\(right)px';")
     }
-
+    ///  open links in browsers
     public func webView(_ webView: WKWebView, decidePolicyFor navigationAction: WKNavigationAction, decisionHandler: @escaping (WKNavigationActionPolicy) -> Void) {
         if let url = navigationAction.request.url {
             if url.isFileURL == false {
@@ -129,6 +129,10 @@ public class MarkdownWebView: CustomView, WKNavigationDelegate {
             }
         }
         decisionHandler(.allow)
+    }
+    public func webView(_ webView: WKWebView, didFinish navigation: WKNavigation!) {
+        /// Disable right-click menu
+        webView.evaluateJavaScript("document.body.setAttribute('oncontextmenu', 'event.preventDefault();');", completionHandler: nil);
     }
 }
 
