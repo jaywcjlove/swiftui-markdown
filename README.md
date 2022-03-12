@@ -65,7 +65,7 @@ Markdown(content: $mdStr)
 
 ## Configure
 
-<img width="666" alt="image" src="https://user-images.githubusercontent.com/1680273/158029345-257d4d2d-dd27-4892-9d85-d800392d47c0.png">
+<img width="666" alt="image" src="https://user-images.githubusercontent.com/1680273/158029436-cb6eb339-f698-4dcd-9508-acda79683aba.png">
 
 ## License
 
