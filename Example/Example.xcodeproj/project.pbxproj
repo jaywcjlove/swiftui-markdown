@@ -30,6 +30,8 @@
 		7D6AF8DD27D9EEA500EE5204 /* Markdown in Frameworks */ = {isa = PBXBuildFile; fileRef = 7D6AF8D727D9E43500EE5204 /* Markdown */; };
 		7D6AF8DF27D9EEFC00EE5204 /* Markdown in Frameworks */ = {isa = PBXBuildFile; productRef = 7D6AF8DE27D9EEFC00EE5204 /* Markdown */; };
 		7D6AF8E227DA73B100EE5204 /* Markdown in Frameworks */ = {isa = PBXBuildFile; productRef = 7D6AF8E127DA73B100EE5204 /* Markdown */; };
+		7D8C8BA027DD22CA0022929A /* KaTeXGroup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D8C8B9F27DD22CA0022929A /* KaTeXGroup.swift */; };
+		7D8C8BA127DD22CA0022929A /* KaTeXGroup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D8C8B9F27DD22CA0022929A /* KaTeXGroup.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -47,6 +49,7 @@
 		7D6AF8C027D9DF2300EE5204 /* Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7D6AF8C227D9DF2300EE5204 /* macOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = macOS.entitlements; sourceTree = "<group>"; };
 		7D6AF8D727D9E43500EE5204 /* Markdown */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = Markdown; path = ..; sourceTree = "<group>"; };
+		7D8C8B9F27DD22CA0022929A /* KaTeXGroup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KaTeXGroup.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +82,7 @@
 				7D6033C827DB2A4A00F7B36B /* ToDoGroup.swift */,
 				7D025D0027DB47620057979B /* MarkdownStyleGroup.swift */,
 				7D025D0327DBCC390057979B /* ListGroup.swift */,
+				7D8C8B9F27DD22CA0022929A /* KaTeXGroup.swift */,
 			);
 			path = Group;
 			sourceTree = "<group>";
@@ -245,6 +249,7 @@
 				7D025D0427DBCC3A0057979B /* ListGroup.swift in Sources */,
 				7D6033C927DB2A4A00F7B36B /* ToDoGroup.swift in Sources */,
 				7D025D0127DB47620057979B /* MarkdownStyleGroup.swift in Sources */,
+				7D8C8BA027DD22CA0022929A /* KaTeXGroup.swift in Sources */,
 				7D6033C627DAF1D900F7B36B /* BaseMarkdownGroup.swift in Sources */,
 				7D6033C027DAEB7E00F7B36B /* CodeGroup.swift in Sources */,
 				7D6033C327DAF08000F7B36B /* HomeGroup.swift in Sources */,
@@ -261,6 +266,7 @@
 				7D025D0527DBCC3A0057979B /* ListGroup.swift in Sources */,
 				7D6033CA27DB2A4B00F7B36B /* ToDoGroup.swift in Sources */,
 				7D025D0227DB47620057979B /* MarkdownStyleGroup.swift in Sources */,
+				7D8C8BA127DD22CA0022929A /* KaTeXGroup.swift in Sources */,
 				7D6033C727DAF1D900F7B36B /* BaseMarkdownGroup.swift in Sources */,
 				7D6033C127DAEB7E00F7B36B /* CodeGroup.swift in Sources */,
 				7D6033C427DAF08000F7B36B /* HomeGroup.swift in Sources */,

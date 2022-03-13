@@ -3,13 +3,80 @@
 <head>
   <title>Markdown Preview</title>
   <link rel="stylesheet" href="marked.css">
-  <link rel="stylesheet" href="plugin.css">
+  <link rel="stylesheet" href="katex.css">
+  <style>
+    body, html {
+      margin: 0;
+      padding: 0;
+      user-select: none;
+      -webkit-user-select: none;
+      min-height: 100%;
+    }
+
+#__markdown_preview__ {
+    cursor: default;
+}
+
+.markdown-body pre .copied {
+  visibility: hidden;
+  display: flex;
+  position: absolute;
+  cursor: pointer;
+  color: var(--color-fg-defaul);
+  top: 6px;
+  right: 6px;
+  border-radius: 5px;
+  background: var(--color-prettylights-syntax-sublimelinter-gutter-mark);
+  padding: 6px;
+  font-size: 12px;
+  transition: all .3s;
+}
+.markdown-body pre:hover .copied {
+  visibility: visible;
+}
+.markdown-body pre:hover .copied:hover {
+  background: var(--color-prettylights-syntax-entity-tag);
+  color: var(--color-canvas-default);
+}
+.markdown-body pre:hover .copied:active,.markdown-body pre .copied.active {
+  background: #2e9b33;
+  color: var(--color-canvas-default);
+}
+
+.markdown-body pre .copied .octicon-copy {
+    display: block;
+}
+
+.markdown-body pre .copied .octicon-check {
+    display: none;
+}
+
+.markdown-body pre .active .octicon-copy {
+    display: none;
+}
+
+.markdown-body pre .active .octicon-check {
+    display: block;
+}
+
+.markdown-body pre code {
+  -webkit-user-select: text;
+  user-select: text;
+  cursor: text;
+}
+.markdown-body pre[class*="language-"] {
+  position: relative;
+}
+
+.math.math-inline {
+  background-color: transparent;
+}
+  </style>
 </head>
 <body>
     <div id="__markdown_preview__" class="markdown-body"></div>
-    <script type="text/javascript" src="./prism.js"></script>
-    <script type="text/javascript" src="./plugins/lnline-color.js"></script>
-    <script type="text/javascript" src="./marked.min.js" charset="utf-8"></script>
+    <script type="text/javascript" src="./markdown.min.js"></script>
+    <script type="text/javascript" src="./node/copyNode.js"></script>
     <script type="text/javascript" src="./copy.js"></script>
     <script type="text/javascript" src="./main.js"></script>
 </body>

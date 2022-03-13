@@ -59,6 +59,9 @@ struct DemoList: View {
             DemoRow(title: "List", systemImage: "list.bullet.rectangle.portrait.fill", tag: "List", selection: $selection) {
                 ListGroup()
             }
+            DemoRow(title: "KaTeX", systemImage: "x.squareroot", tag: "KaTeX", selection: $selection) {
+                KaTeXGroup()
+            }
             Section(header: Text("API")) {
                 DemoRow(
                     title: "markdownStyle",

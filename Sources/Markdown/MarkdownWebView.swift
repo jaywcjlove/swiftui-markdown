@@ -90,6 +90,7 @@ public class MarkdownWebView: CustomView, WKNavigationDelegate {
         \(value)
         """.replacingOccurrences(of: "`", with: "\\`", options: .literal, range: nil)
             .replacingOccurrences(of: "{", with: "\\{", options: .literal, range: nil)
+        
         let end = "`; markdownPreview(content.replace(/\\\\`/g, '`').replace(/\\\\{/g, '{'));"
 
         let script = first + content + end
