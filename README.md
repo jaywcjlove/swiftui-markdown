@@ -8,6 +8,10 @@ Render Markdown text in SwiftUI. It is a preview based on the [`Marked`](https:/
 
 ![Markdown Package Screenshot](https://user-images.githubusercontent.com/1680273/158006647-19d180e2-2549-4cd4-b108-91778beccc1b.png)
 
+![Markdown Package Screenshot](https://user-images.githubusercontent.com/1680273/158075575-14c9c942-5b99-479c-9935-b631bac3828e.png)
+
+![Markdown Package Screenshot](https://user-images.githubusercontent.com/1680273/158075581-925d267f-47ce-4468-b891-0fb2467b89df.png)
+
 ## Installation
 
 You can add MarkdownUI to an Xcode project by adding it as a package dependency.
