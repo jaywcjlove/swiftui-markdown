@@ -924,12 +924,14 @@
   display: none;
 }
 
-.markdown-body .task-list-item-checkbox {
+.markdown-body .task-list-item-checkbox,
+.markdown-body input[type="checkbox"] {
   margin: 0 .2em .25em -1.6em;
   vertical-align: middle;
 }
 
-.markdown-body .contains-task-list:dir(rtl) .task-list-item-checkbox {
+.markdown-body .contains-task-list:dir(rtl) .task-list-item-checkbox,
+.markdown-body .contains-task-list:dir(rtl) input[type="checkbox"] {
   margin: 0 -1.6em .25em .2em;
 }
 
