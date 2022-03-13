@@ -20,7 +20,6 @@ const markdownPreview = (content) => {
             if (node.type == 'element' && node.tagName === 'pre') {
                 const codeid = randomid();
                 codeData[codeid] = code;
-                console.log(codeid, codeData)
                 node.children.push(copyElement(codeid));
             }
     
@@ -28,7 +27,6 @@ const markdownPreview = (content) => {
     }
     __markdown_preview_dom__.innerHTML =  markdown.default(content, options);
 }
-
 
 if (window.webkit) {
     window.webkit.messageHandlers.mdPreviewDidReady.postMessage(null);
