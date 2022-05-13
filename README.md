@@ -1,4 +1,4 @@
-Markdown
+SwiftUI Markdown
 ===
 
 [![CI](https://github.com/jaywcjlove/markdown/actions/workflows/ci.yml/badge.svg)](https://github.com/jaywcjlove/markdown/actions/workflows/ci.yml)
