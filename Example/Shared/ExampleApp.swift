@@ -26,7 +26,9 @@ struct ExampleApp: App {
               DemoList()
             #endif
         }
+        #if os(macOS)
         .windowToolbarStyle(UnifiedCompactWindowToolbarStyle())
         .windowStyle(HiddenTitleBarWindowStyle())
+        #endif
     }
 }
