@@ -19,13 +19,13 @@ https://user-images.githubusercontent.com/1680273/159059803-d844769b-36ad-44c1-a
 You can add MarkdownUI to an Xcode project by adding it as a package dependency.
 
 1. From the File menu, select Add Packages…
-2. Enter https://github.com/jaywcjlove/markdown the Search or Enter Package URL search field
+2. Enter https://github.com/jaywcjlove/swiftui-markdown the Search or Enter Package URL search field
 3. Link `Markdown` to your application target
 
 Or add the following to `Package.swift`:
 
 ```swift
-.package(url: "https://github.com/jaywcjlove/markdown", from: "1.0.0")
+.package(url: "https://github.com/jaywcjlove/swiftui-markdown", from: "1.0.0")
 ```
 
 Or [add the package in Xcode](https://developer.apple.com/documentation/xcode/adding_package_dependencies_to_your_app).
