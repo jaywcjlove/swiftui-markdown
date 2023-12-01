@@ -50,6 +50,8 @@ jobs:
           name: ${{ steps.changelog.outputs.tag }}
           tag: ${{ steps.changelog.outputs.tag }}
           body: |
+            [![Buy me a coffee](https://img.shields.io/badge/Buy%20me%20a%20coffee-048754?logo=buymeacoffee)](https://jaywcjlove.github.io/#/sponsor)
+            
             Documentation ${{ steps.changelog.outputs.tag }}: https://raw.githack.com/jaywcjlove/markdown/${{ steps.changelog.outputs.gh-pages-short-hash }}/index.html
             Comparing Changes: ${{ steps.changelog.outputs.compareurl }}
 
