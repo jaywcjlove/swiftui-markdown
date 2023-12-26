@@ -19,7 +19,6 @@ public struct Markdown: ViewRepresentable {
 
     public init(content: Binding<String>) {
         self._content = content
-        self.theme = colorScheme
     }
     public init(content: Binding<String>, theme: ColorScheme?) {
         self._content = content
