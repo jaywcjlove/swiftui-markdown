@@ -34,6 +34,13 @@ Render Markdown text in SwiftUI. It is a preview based on the [`Marked`](https:/
 </p>
 <br>
 
+Welcome to download [DevTutor](https://apps.apple.com/app/devtutor/id6471227008), a cheat sheet app designed to help developers quickly build excellent applications using SwiftUI.
+
+<p>
+  <a target="_blank" href="https://apps.apple.com/app/devtutor/id6471227008" title="DevTutor for SwiftUI AppStore"><img alt="DevTutor for SwiftUI AppStore" src="https://jaywcjlove.github.io/sb/download/macos.svg" height="51">
+  </a>
+</p>
+
 
 https://user-images.githubusercontent.com/1680273/159059803-d844769b-36ad-44c1-a296-a657de8d099c.mov
 
