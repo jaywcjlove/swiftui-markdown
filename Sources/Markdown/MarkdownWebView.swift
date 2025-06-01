@@ -10,7 +10,7 @@ import WebKit
 #if os(OSX)
     import AppKit
     public typealias CustomView = NSView
-#elseif os(iOS)
+#else
     import UIKit
     public typealias CustomView = UIView
 #endif

@@ -4,7 +4,7 @@ import WebKit
 #if os(OSX)
     import AppKit
     public typealias ViewRepresentable = NSViewRepresentable
-#elseif os(iOS)
+#else
     import UIKit
     public typealias ViewRepresentable = UIViewRepresentable
 #endif
